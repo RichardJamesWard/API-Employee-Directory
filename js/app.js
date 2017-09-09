@@ -29,8 +29,7 @@ $.ajax({
 	  		 			<img class ="image" src="${users[index].picture.large}"> 
 	  		 			 <div class="info">
 			  		 		<p class= "fullName propper-noun"><i>${users[index].name.first} ${users[index].name.last}</i></p>
-			  		 		<p><i>${users[index].login.username}</i></p>
-			  		 		
+			  		 		<p ><i>${users[index].login.username}</i></p>
 		  		 			<p class="propper-noun">${users[index].location.city}, ${users[index].nat}</p>
 		  		 		 </div>
 		  		 	    </li>`;	
@@ -113,7 +112,34 @@ $.ajax({
 					updateModal(thisCard)
 				}							 
 			}); 	
-		});
+
+
+			//Same functionality for when left and right keys are pressed
+		 	$(document).keyup(function(e) {
+		 		if (e.keyCode == 39) { 
+					if  (thisCard !== users.length-1) {
+						thisCard ++;
+						updateModal(thisCard);	
+					} else {0
+						thisCard = 0;
+						updateModal(thisCard);			 
+					}	
+				}	
+			});
+
+			$(document).keyup(function(e) {  
+				if (e.keyCode == 37) { 
+					if (thisCard !== 0)	{	
+						thisCard --;
+						updateModal(thisCard);	
+					} else {
+						thisCard = users.length-1;
+						updateModal(thisCard)
+					}
+				}							 
+			}); 
+		 });	
+		
 
 //////////////////////////////////////////////////////// EXIT MODAL ////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
@@ -162,14 +188,3 @@ $.ajax({
 
   	}	
 });
-
-
-
-
-
-
-
-
-
-
-
