@@ -13,19 +13,19 @@ Awesome Startup is a distributed company with employees working all over the wor
 - [x] New random employee information displays each time the page refreshes
 ### User Directory
 - [x] The directory includes the following:
-⋅⋅* Employee Image
-⋅⋅* First and Last Name
-⋅⋅* Email
-⋅⋅* City
+  * Employee Image
+  * First and Last Name
+  * Email
+  * City
 - [x] Employees can be filtered by name or username
 ### Modal Window
 - [x] Modal window displays the following details:
-⋅⋅* Employee image
-⋅⋅* Name
-⋅⋅* Email
-⋅⋅* Cell Number
-⋅⋅* Detailed Address, including street name and number, city, country and post code.
-⋅⋅* Birthdate
+  * Employee image
+  * Name
+  * Email
+  * Cell Number
+  * Detailed Address, including street name and number, city, country and post code.
+  * Birthdate
 - [x] There is a way to close the modal window
 - [x] Functionality has been added to switch back and forth between employees when the detail modal window is open.
 ### Matching the Mockups
